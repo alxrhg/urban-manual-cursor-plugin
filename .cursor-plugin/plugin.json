@@ -1,0 +1,26 @@
+{
+  "name": "urban-manual",
+  "displayName": "Urban Manual",
+  "version": "0.1.0",
+  "description": "Search curated places, plan trips, and manage saved Urban Manual trips. User/consumer MCP only — no admin tools.",
+  "author": {
+    "name": "Urban Manual"
+  },
+  "homepage": "https://www.urbanmanual.co",
+  "license": "MIT",
+  "keywords": [
+    "urban-manual",
+    "travel",
+    "places",
+    "trips",
+    "mcp"
+  ],
+  "category": "integrations",
+  "tags": [
+    "travel",
+    "mcp",
+    "places"
+  ],
+  "mcpServers": "./mcp.json",
+  "skills": "./skills/"
+}
