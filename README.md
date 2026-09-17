@@ -1,25 +1,41 @@
-# Urban Manual — Cursor Agent Plugin
+# Urban Manual
 
-Wraps the **user** Urban Manual MCP for Cursor.
+Cursor plugin for [Urban Manual](https://www.urbanmanual.co) — curated places, trip planning, and saved trips.
 
-- MCP: `https://api.urbanmanual.co/mcp`
-- Not included: `https://api.urbanmanual.co/mcp/admin`
-- Deprecated (do not use): `https://www.urbanmanual.co/api/mcp`
+## What it does
 
-## Install (Cursor IDE)
+Connects to Urban Manual’s **user** MCP so agents can:
 
-1. Copy this folder somewhere durable, or clone the repo.
-2. In Cursor: add it as a local plugin / open the folder and enable the plugin from the Plugin UI (Grok Bot cannot load `~/.cursor/plugins/local` — prove there if needed, use Cursor IDE for the real install).
-3. Connect Urban Manual when prompted (OAuth) for saved trips. Search and `plan_trip` work without sign-in.
+- Search curated destinations, neighborhoods, hotels, restaurants, and more
+- Plan conversation-scoped trips without creating an account
+- Manage saved trips and places when you sign in (OAuth)
 
-## Smoke
+## MCP
+
+- Endpoint: `https://api.urbanmanual.co/mcp`
+- Scope: traveler / consumer only
+- Not included: admin MCP (`/mcp/admin`) or catalog-editor tools
+
+## Install
+
+Install from the Cursor Marketplace, or add this repository as a local plugin in Cursor.
+
+For saved trips, connect Urban Manual when prompted. Search and trip planning work without signing in.
+
+## Usage
+
+Ask Cursor things like:
+
+- “Find design hotels in Tokyo”
+- “Plan a weekend in Lisbon focused on food and architecture”
+- “What’s the weather in Kyoto next weekend?”
+
+## Smoke test
 
 ```bash
 ./scripts/smoke.sh
 ```
 
-Expects HTTP 200 from discovery and a successful JSON-RPC `initialize` against `api.urbanmanual.co/mcp` only.
+## License
 
-## Scope
-
-User/consumer tools only (search, plan, saved trips, calendar, notebook). No admin catalog or event-admin tools.
+MIT

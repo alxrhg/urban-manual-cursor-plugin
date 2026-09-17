@@ -2,9 +2,10 @@
   "name": "urban-manual",
   "displayName": "Urban Manual",
   "version": "0.1.0",
-  "description": "Search curated places, plan trips, and manage saved Urban Manual trips. User/consumer MCP only — no admin tools.",
+  "description": "Search curated places, plan trips, and manage saved Urban Manual trips. User/consumer MCP only \u2014 no admin tools.",
   "author": {
-    "name": "Urban Manual"
+    "name": "Urban Manual",
+    "email": "hello@urbanmanual.co"
   },
   "homepage": "https://www.urbanmanual.co",
   "license": "MIT",
@@ -22,5 +23,7 @@
     "places"
   ],
   "mcpServers": "./mcp.json",
-  "skills": "./skills/"
+  "skills": "./skills/",
+  "logo": "assets/logo.svg",
+  "repository": "https://github.com/alxrhg/urban-manual-cursor-plugin"
 }
