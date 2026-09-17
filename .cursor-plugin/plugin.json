@@ -4,8 +4,7 @@
   "version": "0.1.0",
   "description": "Search curated places, plan trips, and manage saved Urban Manual trips. User/consumer MCP only \u2014 no admin tools.",
   "author": {
-    "name": "Urban Manual",
-    "email": "hello@urbanmanual.co"
+    "name": "Urban Manual"
   },
   "homepage": "https://www.urbanmanual.co",
   "license": "MIT",
